@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>نشاط (١): المادّة</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+:root{color-scheme:light;--bg:#f4f9fd;--card:#fff;--tx:#2d4156;--ac:#ff9a4d;--ac2:#4fb6cc;--ok:#2e9e5b;--bad:#d64545;--bd:#dfeaf3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+
+
+body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+.wel{min-height:100dvh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#d8f0ff,#ffe8f1 55%,#fff3c9);position:relative;overflow:hidden}
+.bub{position:absolute;border-radius:50%;background:rgba(120,180,230,.2);animation:fl 8s infinite ease-in-out}
+@keyframes fl{50%{transform:translateY(-45px)}}
+.wc{position:relative;background:rgba(255,255,255,.96);color:#17324d;border-radius:26px;padding:34px 26px;max-width:580px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.wc .ic{font-size:60px;animation:fl 3s infinite}
+.wc h1{margin:.2em 0;font-size:1.4rem;color:#1f8a9e}.wc h2{font-size:2.1rem;margin:.1em 0 .6em;color:#f28c28}
+.wc p{margin:.4em 0;font-size:1.05rem}
+.btn{background:linear-gradient(#ffa24a,#f28c28);color:#fff;border:0;border-radius:14px;padding:12px 28px;font:700 1.15rem inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 0 #c06d17;margin-top:14px}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #c06d17}
+.top{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#fff;color:var(--tx);box-shadow:0 2px 12px rgba(80,120,160,.15);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.top b{white-space:nowrap}.pb{flex:1;height:10px;background:#e3eef7;border-radius:9px;overflow:hidden}.pb i{display:block;height:100%;width:0;background:#7ccf9b;transition:width .4s}
+.grid{display:grid;grid-template-columns:1fr;gap:16px;padding:16px;max-width:900px;margin:auto}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:0;border-radius:24px;padding:18px;box-shadow:0 6px 24px rgba(90,130,170,.14)}
+.card h3{margin:0 0 8px}
+.tray{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;min-height:92px;padding:8px;border:2px dashed var(--bd);border-radius:14px;background:rgba(31,138,158,.07)}
+.obj{touch-action:none;user-select:none;cursor:grab;font-size:40px;text-align:center;line-height:1}
+.obj .lb{display:none;font-size:.7rem;margin-top:3px}#tray .obj .lb{display:block}
+.bench{display:flex;justify-content:space-around;align-items:flex-end;margin-top:14px;padding:0 0 10px;border-bottom:8px solid #e3c9a3}
+.scale{width:190px;text-align:center}
+.pan{width:150px;height:46px;margin:0 auto;border-radius:50%/45%;background:linear-gradient(#e8ecf0,#9aa5af);display:flex;justify-content:center;align-items:flex-end;position:relative;box-shadow:0 4px 8px rgba(0,0,0,.25);z-index:2}
+.pan .obj{font-size:32px;margin-bottom:16px}
+.sbody{height:90px;width:190px;border-radius:50% 50% 28% 28%/40% 40% 30% 30%;background:linear-gradient(#cfd6dd,#7f8b96);margin-top:-16px;display:grid;place-items:end center;padding-bottom:14px}
+.disp{background:#cfe8c8;color:#16301c;font:700 1.15rem monospace;direction:rtl;padding:4px 12px;border-radius:6px;border:2px inset #8a9}
+.cyl{position:relative;width:96px;height:360px;margin:auto;border:3px solid #7aa7c0;border-top:0;border-radius:0 0 14px 14px;background:rgba(190,225,245,.22)}
+.water{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(rgba(140,205,250,.7),rgba(90,170,235,.8));transition:height .9s cubic-bezier(.3,1.4,.5,1);border-radius:0 0 10px 10px;height:120px}
+.tk{position:absolute;left:0;width:10px;border-top:1px solid #456;pointer-events:none}.tk.m{width:16px}.tk.M{width:24px;border-top-width:2px}.tk span{position:absolute;left:28px;top:-8px;font-size:.65rem;direction:ltr}
+.ci{position:absolute;bottom:0;left:0;right:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;padding-bottom:2px}.cyl .obj{font-size:26px}
+.base{width:140px;height:12px;background:#7aa7c0;border-radius:6px;margin:0 auto}
+.rd{text-align:center;margin-top:6px;font-weight:700;color:var(--ac2)}
+.sts{margin-top:12px;padding:10px;border-radius:12px;background:rgba(242,140,40,.14);min-height:46px}
+.q{padding:12px 0;border-bottom:1px dashed var(--bd)}.q p{margin:0 0 8px;font-weight:600}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,textarea{font:inherit;padding:8px 10px;border:1.5px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);flex:1;min-width:110px}
+textarea{width:100%;min-height:60px;margin-bottom:6px}
+.btn2{background:var(--ac2);color:#fff;border:0;border-radius:10px;padding:8px 14px;font:inherit;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}.chip{border:1.5px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:6px 12px;font:inherit;cursor:pointer}.chip.on{background:#ffe2bd;border-color:var(--ac);color:#5a3300}
+.fb{display:block;margin-top:6px;font-size:.93rem}.fb.g{color:var(--ok)}.fb.b{color:var(--bad)}
+.fin{margin:16px;padding:20px;border-radius:18px;background:linear-gradient(135deg,#ffd166,#f28c28);color:#3a2100;text-align:center;font-size:1.1rem}
+</style></head><body>
+<div class="wel" id="wel"><div class="wc"><div class="ic">🔬</div><h1>أهلاً بكم في تجربة</h1><h2>نشاط (١): المادّة</h2>
+<p>إعداد الطالبة: <b>ريتال خالد وليد اشبير</b></p><p>إشراف المعلمة الفاضلة: <b>روز اغبارية</b></p>
+<button class="btn" onclick="start()">ابدأ التجربة ◀</button></div></div>
+
+<div id="app" hidden>
+<div class="top"><b>🧪 نشاط (١): المادّة</b><div class="pb"><i id="bar"></i></div><b id="pc">0/7</b></div>
+<div class="grid">
+<section class="card"><h3>🧰 طاولة المختبر</h3>
+<p style="margin:0 0 8px;font-size:.9rem">اسحبي الأجسام إلى الميزان أو إلى المخبار المدرّج (فيه ٢٠٠ سم³ ماء). جرّبي أجساماً إضافية أيضاً!</p>
+<div class="tray" id="tray" data-drop></div>
+<div class="bench">
+<div class="scale"><div class="pan" id="pan" data-drop></div><div class="sbody"><div class="disp" id="disp">0 غم</div></div><div class="rd">⚖️ ميزان حسّاس</div></div>
+<div><div class="cyl" id="cyl" data-drop><div class="water" id="wt"></div><div class="ci" id="ci"></div></div><div class="base"></div><div class="rd">مخبار مدرّج: <span id="volr">200 سم³</span></div></div>
+</div>
+<div class="sts" id="sts"></div></section>
+
+<section class="card"><h3>📝 ورقة النشاط</h3>
+<div class="q" data-q="1"><p>١. أضعُ الحجر فوق الميزان الحسّاس. أسجّل قراءة الميزان:</p><div class="row"><input id="a1" readonly placeholder="اسحبي الحجر إلى الميزان"><button class="btn2" onclick="rec1(this)">📋 سجّلي القراءة</button></div><span class="fb"></span></div>
+<div class="q" data-q="2"><p>٢. أضعُ الحجر في مخبار مدرّج يحتوي ٢٠٠ سم³ من الماء، أسجّل حجم الماء الجديد:</p><div class="row"><input id="a2" readonly placeholder="اسحبي الحجر إلى المخبار"><button class="btn2" onclick="rec2(this)">📋 سجّلي الحجم</button></div><span class="fb"></span></div>
+<div class="q" data-q="3" data-yes="صحيح! قسنا الكتلة (بالميزان) والحجم (بالمخبار)." data-no="فكّري: ماذا قسنا بالميزان وماذا قسنا بالمخبار؟"><p>٣. ما خصائص الحجر التي قمت بقياسها؟</p><div class="chips" data-items="الكتلة|الحجم|الطعم|الرائحة|الصوت" data-ok="الكتلة|الحجم"></div><button class="btn2" onclick="chk(this)">تحقّق</button><span class="fb"></span></div>
+<div class="q" data-q="4"><p>٤. يسمّى الحجر مادة لأنّ له:</p><div class="row"><select id="s1"><option>—</option><option>الكتلة</option><option>الحجم</option><option>اللون</option><option>الصوت</option></select><b>و</b><select id="s2"><option>—</option><option>الكتلة</option><option>الحجم</option><option>اللون</option><option>الصوت</option></select><button class="btn2" onclick="chk4(this)">تحقّق</button></div><span class="fb"></span></div>
+<div class="q" data-q="5"><p>٥. أكتب بلغتي تعريفاً للمادة:</p><textarea id="t5" data-kw="كتلة,حجم/حيز/فراغ/مكان" placeholder="اكتبي تعريفك هنا..."></textarea><button class="btn2" onclick="chkT(this)">تحقّق</button><span class="fb"></span></div>
+<div class="q" data-q="6" data-yes="رائع! حتى الهواء مادة لأن له كتلة ويشغل حيزاً، أما الضوء والصوت والحرارة والظل فليست مادة." data-no="تذكّري: المادة لها كتلة وتشغل حيزاً. هل للضوء كتلة؟ وهل للهواء كتلة؟"><p>٦. أختار أسماء مواد من بيئتي (المواد فقط):</p><div class="chips" data-items="ماء|هواء|ضوء|صوت|خشب|حرارة|حديد|حليب|ظل|ملح" data-ok="ماء|هواء|خشب|حديد|حليب|ملح"></div><button class="btn2" onclick="chk(this)">تحقّق</button><span class="fb"></span></div>
+<div class="q" data-q="7" data-yes="ممتاز 💧 الماء ثروة نحافظ عليها ونعيد استخدامها." data-no="فكّري في ترشيد استهلاك الماء، اختاري الخيارين الأفضل."><p>٧. برأيك: ماذا نفعل بالماء بعد الانتهاء من النشاط؟</p><div class="chips" data-items="أسكبه في المجاري|أستخدمه لسقاية النباتات|أعيد استخدامه في التنظيف|أتركه يتبخر دون فائدة" data-ok="أستخدمه لسقاية النباتات|أعيد استخدامه في التنظيف"></div><button class="btn2" onclick="chk(this)">تحقّق</button><span class="fb"></span></div>
+</section></div>
+<div class="fin" id="fin" hidden>🎉 أنهيتم النشاط بنجاح!<br><b>المادة: كل ما له كتلة ويشغل حيّزاً (حجماً) من الفراغ.</b></div></div>
+
+<script>
+const $=s=>document.querySelector(s),done=new Set();
+for(let i=0;i<14;i++){const b=document.createElement('div');b.className='bub';const s=20+Math.random()*80;b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${-Math.random()*8}s`;wel.prepend(b)}
+function start(){wel.hidden=true;app.hidden=false;scrollTo(0,0)}
+const OB=[['stone','🪨','حجر صغير',85,30],['nail','🔩','مسمار حديد',62,8],['ball','🔮','كرة زجاجية',26,10],['wood','🪵','قطعة خشب',18,18]];
+OB.forEach(([id,e,n,m,v])=>{const d=document.createElement('div');d.className='obj';d.dataset.id=id;d.innerHTML=e+'<div class="lb">'+n+'</div>';d.m=m;d.v=v;tray.appendChild(d)});
+for(let i=1;i<=50;i++){const v=i*10,t=document.createElement('div');t.className='tk'+(v%100==0?' M':v%50==0?' m':'');t.style.bottom=v*.72+'px';if(v%50==0)t.innerHTML='<span>'+v+'</span>';cyl.appendChild(t)}
+let M=0,V=200;
+function upd(){M=0;pan.querySelectorAll('.obj').forEach(o=>M+=o.m);let d=0,w=0,n=0;
+ci.querySelectorAll('.obj').forEach(o=>{n++;d+=o.v;if(o.dataset.id=='wood')w=1});
+V=Math.min(500,200+d);const h=V*.72;wt.style.height=h+'px';
+ci.querySelectorAll('.obj').forEach(o=>{o.style.cssText=o.dataset.id=='wood'?'position:absolute;bottom:'+(h-16)+'px;left:50%;transform:translateX(-50%)':''});
+disp.textContent=Math.round(M)+' غم';volr.textContent=V+' سم³';
+sts.textContent=w?'🪵 الخشب يطفو! الماء المُزاح هو الجزء المغمور فقط. ارتفع الماء '+(V-200)+' سم³.':n?'💧 ارتفع الماء لأن الجسم يشغل حيّزاً (حجماً) فأزاح الماء بمقدار '+(V-200)+' سم³.':M?'⚖️ الميزان يقيس كتلة الجسم.':'اسحبي الأجسام إلى الميزان أو المخبار 👆'}
+let dr=null;
+document.addEventListener('pointerdown',e=>{const o=e.target.closest('.obj');if(!o)return;e.preventDefault();dr=o;o.style.cssText='position:fixed;z-index:50;pointer-events:none;font-size:46px;left:'+(e.clientX-23)+'px;top:'+(e.clientY-30)+'px';document.body.appendChild(o)});
+document.addEventListener('pointermove',e=>{if(dr){dr.style.left=e.clientX-23+'px';dr.style.top=e.clientY-30+'px'}});
+function drop(e){if(!dr)return;const o=dr;dr=null;const t=document.elementFromPoint(e.clientX,e.clientY),z=t&&t.closest('[data-drop]');o.style.cssText='';(z?(z.id=='cyl'?ci:z):tray).appendChild(o);upd()}
+document.addEventListener('pointerup',drop);document.addEventListener('pointercancel',drop);upd();
+function prog(){bar.style.width=done.size/7*100+'%';pc.textContent=done.size+'/7';if(done.size==7)fin.hidden=false}
+function fb(q,m,g){const f=q.querySelector('.fb');f.textContent=m;f.className='fb '+(g?'g':'b');if(g){done.add(q.dataset.q);prog()}}
+function rec1(b){const q=b.closest('.q');if(!M)return fb(q,'ضعي الحجر فوق الميزان أولاً ⚖️',0);a1.value=Math.round(M)+' غم';fb(q,'تم تسجيل الكتلة ✔',1)}
+function rec2(b){const q=b.closest('.q');if(V<=200)return fb(q,'ضعي الحجر في المخبار أولاً 🧪',0);a2.value=V+' سم³';fb(q,'حجم الجسم = '+V+' − ٢٠٠ = '+(V-200)+' سم³ ✔',1)}
+document.querySelectorAll('.chips').forEach(c=>c.dataset.items.split('|').forEach(t=>{const b=document.createElement('button');b.className='chip';b.textContent=t;b.onclick=()=>b.classList.toggle('on');c.appendChild(b)}));
+function chk(btn){const q=btn.closest('.q'),c=q.querySelector('.chips'),ok=new Set(c.dataset.ok.split('|')),s=[...c.querySelectorAll('.on')].map(b=>b.textContent),g=s.length==ok.size&&s.every(x=>ok.has(x));fb(q,g?q.dataset.yes:q.dataset.no,g)}
+function chk4(b){const q=b.closest('.q'),g=[s1.value,s2.value].sort().join()==['الكتلة','الحجم'].sort().join();fb(q,g?'صحيح! لأن له كتلة ويشغل حيّزاً 👏':'تلميح: الميزان والمخبار قاسا خاصيتين.',g)}
+const nz=s=>s.replace(/[\u064B-\u0652]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');
+function chkT(b){const q=b.closest('.q'),t=nz(q.querySelector('textarea').value),g=q.querySelector('textarea').dataset.kw.split(',').every(p=>p.split('/').some(w=>t.includes(nz(w))));fb(q,g?'تعريف جيد 🌟 المادة: كل ما له كتلة ويشغل حيّزاً من الفراغ.':'حاولي ذكر الكتلة وأنّ المادة تشغل حيّزاً (حجماً).',g)}
+</script></body></html>
